@@ -29,7 +29,7 @@
         Link colors:
         link-primary, link-secondary, link-success, link-danger, link-warning, link-info, link-light, link-dark
     */
-    $settings_theme                 = "default";        // Options are upper
+    $settings_theme                 = "darkly";        // Options are upper
     $settings_link_color            = "link-dark"; // Options are upper
     $settings_favicon               = "logo.svg";
     $settings_navbar_logo           = "logo.svg";
@@ -46,10 +46,10 @@
     If you want disable link you must remain name empty
 */
 
-    $settings_custom_link_name          = '<i class="fas fa-globe-europe"></i> Website'; // Example: <i class="fab fa-discord"></i> Discord or <i class="fas fa-globe-europe"></i> Website
-    $settings_custom_link_adress        = 'https://github.com/surftimer/SurfTimer-Web-Stats'; // Exmaple: https://github.com/KristianP26/Surftimer-Web-Stats
-    $settings_custom_link_2_name        = '<i class="fab fa-discord"></i> Discord'; // Example: <i class="fab fa-discord"></i> Discord or <i class="fas fa-globe-europe"></i> Website
-    $settings_custom_link_2_adress      = 'https://discord.surftimer.dev'; // Exmaple: https://discord.gg/HxhhypNa3Z
+    $settings_custom_link_name          = ''; // Example: <i class="fab fa-discord"></i> Discord or <i class="fas fa-globe-europe"></i> Website
+    $settings_custom_link_adress        = ''; // Exmaple: https://github.com/KristianP26/Surftimer-Web-Stats
+    $settings_custom_link_2_name        = ''; // Example: <i class="fab fa-discord"></i> Discord or <i class="fas fa-globe-europe"></i> Website
+    $settings_custom_link_2_adress      = ''; // Exmaple: https://discord.gg/HxhhypNa3Z
     $settings_custom_link_3_name        = ''; // Example: <i class="fab fa-discord"></i> Discord or <i class="fas fa-globe-europe"></i> Website
     $settings_custom_link_3_adress      = ''; // Exmaple: https://discord.gg/HxhhypNa3Z
 
