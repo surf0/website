@@ -29,8 +29,8 @@
         Link colors:
         link-primary, link-secondary, link-success, link-danger, link-warning, link-info, link-light, link-dark
     */
-    $settings_theme                 = "darkly";        // Options are upper
-    $settings_link_color            = "link-dark"; // Options are upper
+    $settings_theme                 = "cyborg";        // Options are upper
+    $settings_link_color            = "link-light"; // Options are upper
     $settings_favicon               = "logo.svg";
     $settings_navbar_logo           = "logo.svg";
     $settings_background_image      = "";               // EXAMPLE: surf-images/4old.jpg
