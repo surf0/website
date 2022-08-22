@@ -22,41 +22,41 @@
                 <div class="mt-4 mb-4"> <!-- Info Badges -->
                     <div class="row">
                         <div class="col-md col-12">
-                            <div class="card card-body text-center shadow-sm my-2">
+                            <div class="card card-body bg-light text-center shadow-sm my-2">
                                 <i class="fas fa-users fa-2x"></i>
-                                <span class="border-secondary bg-light my-1"><?php echo HOME_TOTAL_PLAYERS;?></span>
+                                <span class="border-secondary  my-1"><?php echo HOME_TOTAL_PLAYERS;?></span>
                                 <hr>
                                 <?php echo number_format($total_players); ?>
                             </div>
                         </div>
                         <div class="col-md col-12">
-                            <div class="card card-body text-center shadow-sm my-2">
+                            <div class="card card-body bg-light text-center shadow-sm my-2">
                                 <i class="fas fa-map fa-2x"></i>
-                                <span class="border-secondary bg-light my-1"><?php echo HOME_TOTAL_MAPS;?></span>
+                                <span class="border-secondary  my-1"><?php echo HOME_TOTAL_MAPS;?></span>
                                 <hr>
                                 <?php echo number_format($total_maps); ?>
                             </div>
                         </div>
                         <div class="col-md col-12">
-                            <div class="card card-body text-center shadow-sm my-2">
+                            <div class="card card-body bg-light text-center shadow-sm my-2">
                                 <i class="fas fa-bold fa-2x"></i>
-                                <span class="border-secondary bg-light my-1"><?php echo HOME_TOTAL_BONUSES;?></span>
+                                <span class="border-secondary  my-1"><?php echo HOME_TOTAL_BONUSES;?></span>
                                 <hr>
                                 <?php echo number_format($total_bonuses); ?>
                             </div>
                         </div>
                         <div class="col-md col-12">
-                            <div class="card card-body text-center shadow-sm my-2">
+                            <div class="card card-body bg-light text-center shadow-sm my-2">
                                 <i class="fas fa-user-clock fa-2x"></i>
-                                <span class="border-secondary bg-light my-1"><?php echo HOME_TOTAL_COMPLETIONS;?></span>
+                                <span class="border-secondary  my-1"><?php echo HOME_TOTAL_COMPLETIONS;?></span>
                                 <hr>
                                 <?php echo number_format($count_player_times); ?>
                             </div>
                         </div>
                         <div class="col-md col-12">
-                            <div class="card card-body text-center shadow-sm my-2">
+                            <div class="card card-body bg-light text-center shadow-sm my-2">
                                 <i class="fas fa-clock fa-2x"></i>
-                                <span class="border-secondary bg-light my-1"><?php echo HOME_HOURS_PLAYED;?></span>
+                                <span class="border-secondary  my-1"><?php echo HOME_HOURS_PLAYED;?></span>
                                 <hr>
                                 <?php echo number_format($hours_played); ?>
                             </div>
@@ -79,7 +79,7 @@
                                     </div>
                                 </div>
                                 <div class="table-responsive">
-                                    <table class="table table-hover shadow-sm card-body table-sm py-0 my-0">
+                                    <table class="table table-hover shadow-sm card-body bg-light table-sm py-0 my-0">
                                         <thead>
                                             <tr class="">
                                                 <th class="text-left px-3" scope="col"><?php echo TABLE_USERNAME;?></th>
@@ -93,7 +93,7 @@
                                                 <?php
                                                     $runtime_r10rs_data = $r10r['runtime'];    
                                                     $runtime_r10rs_microtime = substr($runtime_r10rs_data, strpos($runtime_r10rs_data, ".") + 1);    
-                                                    $runtime_r10rs_timeFormat = gmdate("H:i:s", $runtime_r10rs_data).'<span class="border-secondary bg-light">.'.$runtime_r10rs_microtime.'</span>';
+                                                    $runtime_r10rs_timeFormat = gmdate("H:i:s", $runtime_r10rs_data).'<span class="border-secondary ">.'.$runtime_r10rs_microtime.'</span>';
                                                     $dateFormat_r10rs = date('Y/m/d  (H:i)', strtotime($r10r['date']));
                                                 ?>
                                                 <tr>
@@ -124,7 +124,7 @@
                                     </div>
                                 </div>
                                 <div class="table-responsive">
-                                    <table class="table table-hover shadow-sm card-body table-sm py-0 my-0">
+                                    <table class="table table-hover shadow-sm card-body bg-light table-sm py-0 my-0">
                                         <thead>
                                             <tr class="">
                                                 <th class="text-center" scope="col">#</th>
@@ -169,7 +169,7 @@
                                     </div>
                                 </div>
                                 <div class="table-responsive">
-                                    <table class="table table-hover shadow-sm card-body table-sm py-0 my-0">
+                                    <table class="table table-hover shadow-sm card-body bg-light table-sm py-0 my-0">
                                         <thead>
                                             <tr class="">
                                                 <th class="text-center" scope="col">#</th>
@@ -210,7 +210,7 @@
                                     </div>
                                 </div>
                                 <div class="table-responsive">
-                                    <table class="table table-hover shadow-sm card-body table-sm py-0 my-0">
+                                    <table class="table table-hover shadow-sm card-body bg-light table-sm py-0 my-0">
                                         <thead>
                                             <tr class="">
                                                 <th class="text-center" scope="col">#</th>
@@ -251,7 +251,7 @@
                                     </div>
                                 </div>
                                 <div class="table-responsive">
-                                    <table class="table table-hover shadow-sm card-body table-sm py-0 my-0">
+                                    <table class="table table-hover shadow-sm card-body bg-light table-sm py-0 my-0">
                                         <thead>
                                             <tr class="">
                                                 <th class="text-center" scope="col">#</th>
@@ -292,7 +292,7 @@
                                     </div>
                                 </div>
                                 <div class="table-responsive">
-                                    <table class="table table-hover shadow-sm card-body table-sm py-0 my-0">
+                                    <table class="table table-hover shadow-sm card-body bg-light table-sm py-0 my-0">
                                         <thead>
                                             <tr class="">
                                                 <th class="text-left pl-3" scope="col"><?php echo TABLE_MAP;?></th>
