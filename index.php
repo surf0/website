@@ -24,7 +24,7 @@
                         <div class="col-md col-12">
                             <div class="card card-body text-center shadow-sm my-2">
                                 <i class="fas fa-users fa-2x"></i>
-                                <span class="text-muted my-1"><?php echo HOME_TOTAL_PLAYERS;?></span>
+                                <span class="border-secondary bg-light my-1"><?php echo HOME_TOTAL_PLAYERS;?></span>
                                 <hr>
                                 <?php echo number_format($total_players); ?>
                             </div>
@@ -32,7 +32,7 @@
                         <div class="col-md col-12">
                             <div class="card card-body text-center shadow-sm my-2">
                                 <i class="fas fa-map fa-2x"></i>
-                                <span class="text-muted my-1"><?php echo HOME_TOTAL_MAPS;?></span>
+                                <span class="border-secondary bg-light my-1"><?php echo HOME_TOTAL_MAPS;?></span>
                                 <hr>
                                 <?php echo number_format($total_maps); ?>
                             </div>
@@ -40,7 +40,7 @@
                         <div class="col-md col-12">
                             <div class="card card-body text-center shadow-sm my-2">
                                 <i class="fas fa-bold fa-2x"></i>
-                                <span class="text-muted my-1"><?php echo HOME_TOTAL_BONUSES;?></span>
+                                <span class="border-secondary bg-light my-1"><?php echo HOME_TOTAL_BONUSES;?></span>
                                 <hr>
                                 <?php echo number_format($total_bonuses); ?>
                             </div>
@@ -48,7 +48,7 @@
                         <div class="col-md col-12">
                             <div class="card card-body text-center shadow-sm my-2">
                                 <i class="fas fa-user-clock fa-2x"></i>
-                                <span class="text-muted my-1"><?php echo HOME_TOTAL_COMPLETIONS;?></span>
+                                <span class="border-secondary bg-light my-1"><?php echo HOME_TOTAL_COMPLETIONS;?></span>
                                 <hr>
                                 <?php echo number_format($count_player_times); ?>
                             </div>
@@ -56,7 +56,7 @@
                         <div class="col-md col-12">
                             <div class="card card-body text-center shadow-sm my-2">
                                 <i class="fas fa-clock fa-2x"></i>
-                                <span class="text-muted my-1"><?php echo HOME_HOURS_PLAYED;?></span>
+                                <span class="border-secondary bg-light my-1"><?php echo HOME_HOURS_PLAYED;?></span>
                                 <hr>
                                 <?php echo number_format($hours_played); ?>
                             </div>
@@ -93,7 +93,7 @@
                                                 <?php
                                                     $runtime_r10rs_data = $r10r['runtime'];    
                                                     $runtime_r10rs_microtime = substr($runtime_r10rs_data, strpos($runtime_r10rs_data, ".") + 1);    
-                                                    $runtime_r10rs_timeFormat = gmdate("H:i:s", $runtime_r10rs_data).'<span class="text-muted">.'.$runtime_r10rs_microtime.'</span>';
+                                                    $runtime_r10rs_timeFormat = gmdate("H:i:s", $runtime_r10rs_data).'<span class="border-secondary bg-light">.'.$runtime_r10rs_microtime.'</span>';
                                                     $dateFormat_r10rs = date('Y/m/d  (H:i)', strtotime($r10r['date']));
                                                 ?>
                                                 <tr>
