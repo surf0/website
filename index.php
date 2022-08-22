@@ -15,7 +15,10 @@
 
                 <h5>Surf Stats's <?php echo NAVBAR_DASHBOARD;?></h5>
                 <hr class="my-0">
-
+                <div class="mt-4 mb-4">
+                <a class="btn btn-primary" href="steam://connect/161.97.117.64:27015" role="button">Connect to server</a>
+                </div>
+                <hr class="my-0">
                 <div class="mt-4 mb-4"> <!-- Info Badges -->
                     <div class="row">
                         <div class="col-md col-12">
@@ -324,6 +327,5 @@
         </div>
     </div>
 <?php
-    require_once('footer.php');
     $db_conn_surftimer->close();
 ?>
