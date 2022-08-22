@@ -5,6 +5,10 @@
   font-size: 1.4rem;
 }
 
+.bg-card-black {
+  background-color: black;
+}
+
 body,
 html {
   height: 100%;
