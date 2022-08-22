@@ -78,7 +78,7 @@
 
     <div class=""></div>
 
-    <div class="container bg-dark shadow-lg">
+    <div class="container shadow-lg">
         <div id="page-content">
 
     <!-- Search Modal -->
