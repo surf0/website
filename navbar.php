@@ -4,7 +4,7 @@
     
     <!-- Coded & Designed with ❤ by Kristián Partl.  --->
 
-    <nav class="container navbar navbar-expand-lg navbar-light bg-light py-3 px-5 shadow-sm">
+    <nav class="container navbar navbar-expand-lg py-3 px-5 shadow-sm">
         <div class="container">
             <a class="navbar-brand" href="index.php">
             <?php 
@@ -53,7 +53,7 @@
                     </li>
                     <?php if($settings_language_enable): ?>
                         <div class="dropdown">
-                            <a class="nav-link dropdown-toggle active bg-white border rounded py-0 my-2 ms-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle active border rounded py-0 my-2 ms-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="./images/flags/<?php echo LanguageFlag();?>.svg" width="18,5" class="border align-middle"> <?php echo $_SESSION['language'];?>
                             </a>
                             <ul class="dropdown-menu">
@@ -69,7 +69,7 @@
                         </div>
                     <?php endif;?>
                     <li class="nav-item">
-                        <a class="nav-link active bg-white border rounded py-0 my-2 ms-2" href="#" data-bs-toggle="modal" data-bs-target="#SearchPlayers"><i class="fas fa-search"></i> <?php echo NAVBAR_SEARCH_PLAYER;?></a>
+                        <a class="nav-link active border rounded py-0 my-2 ms-2" href="#" data-bs-toggle="modal" data-bs-target="#SearchPlayers"><i class="fas fa-search"></i> <?php echo NAVBAR_SEARCH_PLAYER;?></a>
                     </li>
                 </ul>
             </div>
@@ -78,7 +78,7 @@
 
     <div class=""></div>
 
-    <div class="container bg-white shadow-lg">
+    <div class="container shadow-lg">
         <div id="page-content">
 
     <!-- Search Modal -->
