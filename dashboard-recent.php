@@ -14,7 +14,7 @@
 
             <section class="my-4 pb-1">
 
-                <h5>Surf Stat's <?php echo RECENT_100_MAP_RECORDS;?></h5>
+                <h5> <?php echo RECENT_100_MAP_RECORDS;?></h5>
                 <hr class="mt-0 mb-3">
                     <div class="" id="recent-records-load">
                         <div class="text-center text-muted py-4">

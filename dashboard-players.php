@@ -15,7 +15,7 @@
 
             <section class="my-4 pb-1">
 
-                <h5>Surf Stat's <?php echo TOP_1000_PLAYERS; ?></h5>
+                <h5> <?php echo TOP_1000_PLAYERS; ?></h5>
                 <hr class="mt-0 mb-3">
                     <div class="" id="top-players-load">
                         <div class="text-center text-muted py-4">

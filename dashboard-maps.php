@@ -20,7 +20,7 @@
             <section class="my-4 pb-1">
                 <div class="" id="maps-load">
                     <?php if((isset($mapname))&&($mapname!=='')): ?>
-                        <h5><a href="dashboard-maps.php" class="text-muted text-decoration-none">Surf Stat's <?php echo MAP_COLLECTION; ?></a>  / <?php echo $mapname;?><?php echo MapDownload($mapname);?></h5>
+                        <h5><a href="dashboard-maps.php" class="text-muted text-decoration-none"> <?php echo MAP_COLLECTION; ?></a>  / <?php echo $mapname;?><?php echo MapDownload($mapname);?></h5>
                         <hr class="mt-0 mb-3">                       
                         <div class="text-center text-muted py-4">
                             <div class="spinner-grow text-dark my-2" role="status">
@@ -29,7 +29,7 @@
                             <h5><?php echo LOADING_MAP; ?>: <b><?php echo $mapname; ?></b> <?php echo DETAILS; ?>...<br><small><?php echo PLEASE_WAIT; ?>...</small></h5>
                         </div>
                     <?php else: ?>
-                        <h5>Surf Stat's <?php echo MAP_COLLECTION; ?></h5>
+                        <h5> <?php echo MAP_COLLECTION; ?></h5>
                         <hr class="mt-0 mb-3">                       
                         <div class="text-center text-muted py-4">
                             <div class="spinner-grow text-dark my-2" role="status">

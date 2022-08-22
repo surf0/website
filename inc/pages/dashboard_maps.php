@@ -420,7 +420,7 @@ endif;
 
 
 <?php if((isset($mapname))&&($mapname!=='')): ?>
-    <h5><a href="dashboard-maps.php" class="text-muted text-decoration-none">Surf Stat's <?php echo MAP_COLLECTION; ?></a>  / <?php echo $mapname;?><?php echo MapDownload($mapname);?></h5>
+    <h5><a href="dashboard-maps.php" class="text-muted text-decoration-none"> <?php echo MAP_COLLECTION; ?></a>  / <?php echo $mapname;?><?php echo MapDownload($mapname);?></h5>
     <hr class="mt-0 mb-3">
     <?php if(mysqli_num_rows($results_map) > 0): ?>        
         <?php if(isset($row_map['date'])): ?>
@@ -548,18 +548,18 @@ endif;
             <h5 class="text-center mt-5 mb-0">
                 <i class="fas fa-info-circle"></i> <?php echo TABLE_MAP; ?>: <strong><?php echo $mapname; ?></strong> <?php echo MAP_NOT_ADDED_PROPERLY; ?>.
                 <br>
-                <a role="button" class="btn btn-outline-secondary px-5 py-1 mt-4" href="dashboard-maps.php"><i class="fas fa-map"></i> Surf Stat's <?php echo MAP_COLLECTION; ?> </a>
+                <a role="button" class="btn btn-outline-secondary px-5 py-1 mt-4" href="dashboard-maps.php"><i class="fas fa-map"></i>  <?php echo MAP_COLLECTION; ?> </a>
             </h5>
         <?php endif; ?>
     <?php else: ?>
         <h5 class="text-center mt-5 mb-0">
             <i class="fas fa-info-circle"></i> <?php echo TABLE_MAP; ?>: <strong><?php echo $mapname; ?></strong> <?php echo NOT_FOUND_IN_DB; ?>.
             <br>
-            <a role="button" class="btn btn-outline-secondary px-5 py-1 mt-4" href="dashboard-maps.php"><i class="fas fa-map"></i> Surf Stat's <?php echo MAP_COLLECTION; ?> </a>
+            <a role="button" class="btn btn-outline-secondary px-5 py-1 mt-4" href="dashboard-maps.php"><i class="fas fa-map"></i>  <?php echo MAP_COLLECTION; ?> </a>
         </h5>
     <?php endif; ?>
 <?php else: ?>
-    <h5>Surf Stat's <?php echo MAP_COLLECTION; ?></h5>
+    <h5> <?php echo MAP_COLLECTION; ?></h5>
     <hr class="mt-0 mb-3">
     <div class="table-responsive">
         <table class="table table-hover border shadow-sm py-0 my-2 nowrap" style="width:100%" id="maps">
