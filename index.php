@@ -16,7 +16,7 @@
                 <h5><?php echo NAVBAR_DASHBOARD;?></h5>
                 <hr class="my-0">
                 <div class="mt-4 mb-4">
-                <a class="btn btn-primary" href="steam://connect/161.97.117.64:27015" role="button">Connect to server</a>
+                <a class="btn btn-primary" href="steam://connect/161.97.117.64:27015" role="button">Connect to Server</a>
                 </div>
                 <hr class="my-0">
                 <div class="mt-4 mb-4"> <!-- Info Badges -->
