@@ -2,7 +2,7 @@
         $nav_active_dropdown_dashboard  = array('Most Active - Dashboard', 'Top Players - Dashboard', 'Recent Records - Dashboard', 'Maps - Dashboard', 'Home - Dashboard', 'Servers - Dashboard');
     ?>
     
-    <!-- Coded & Designed with ❤ by Kristián Partl.  --->
+    
 
     <nav class="container navbar navbar-expand-lg navbar-dark bg-dark py-3 px-5 shadow-sm">
         <div class="container">
@@ -78,7 +78,7 @@
 
     <div class=""></div>
 
-    <div class="container shadow-lg">
+    <div class="container bg-dark shadow-lg">
         <div id="page-content">
 
     <!-- Search Modal -->
@@ -102,4 +102,4 @@
         </div>
     </div>
 
-    <!-- Coded & Designed with ❤ by Kristián Partl.  --->
+    

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Coded & Designed with ❤ by Kristián Partl.  --->
+
 <html lang="en">
     <head>
         <meta charset="utf-8">
