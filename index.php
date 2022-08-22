@@ -327,5 +327,6 @@
         </div>
     </div>
 <?php
+    require_once('footer.php');
     $db_conn_surftimer->close();
 ?>
