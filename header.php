@@ -35,16 +35,5 @@
         <script type="text/javascript" src="./vendor/js/datatables.min.js"></script>
         <?php require_once('./inc/scripts.php'); ?>
 
-        <!-- <style>
-            body{
-                overflow-y: scroll;
-                background-image: url('./images/<?php echo BackgroundImage(); ?>');
-                background-position: center;
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                background-size: cover;
-            }
-        </style> -->
-
     </head>
     <body class="d-flex flex-column bg-black-kp">
