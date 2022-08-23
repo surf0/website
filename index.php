@@ -21,10 +21,10 @@
                                 <a class="btn btn-primary" href="steam://connect/161.97.117.64:27015" role="button">Connect to Server #1</a>
                             </div>
                             <div class="col-sm">
-                                <a class="btn btn-outline-primary" href="https://discord.gg/gNUsvEuZ3d" role="button">Discord</a>
+                                <a class="btn btn-outline-primary" href="https://discord.gg/gNUsvEuZ3d" target="_blank" rel="noopener" role="button">Discord</a>
                             </div>
                             <div class="col-sm">
-                                <a class="btn btn-outline-primary" href="https://steamcommunity.com/groups/surf0" role="button">Steam Community</a>
+                                <a class="btn btn-outline-primary" href="https://steamcommunity.com/groups/surf0" target="_blank" rel="noopener" role="button">Steam Community</a>
                             </div>
                         </div>
                     </div>
