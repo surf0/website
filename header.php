@@ -5,7 +5,6 @@
         <meta charset="utf-8">
         <meta name="description" content="Surf Stats">
         <meta name="keywords" content="SurfStats,CSGO,surftimer,Surf,Surf Servers">
-        <meta name="author" content="Kristián Partl">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <?php if($page_name === 'Player Profile - Dashboard'): ?>
@@ -13,13 +12,11 @@
         <?php else: ?>
             <title><?php echo $page_name; ?> - Surf Stats</title>
         <?php endif; ?>
-
-        <?php 
-            if($settings_favicon!='')
-                echo '<link rel="icon" href="./images/'.$settings_favicon.'" type="image/gif">';
-            else
-                echo '<link rel="icon" href="./images/logo.svg" type="image/gif">';
-        ?>
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+        <link rel="manifest" href="./images/site.webmanifest">
 
         <!-- Bootstrap core CSS -->
         <link href="./vendor/bootstrap/css/<?php if($settings_theme!=='') echo $settings_theme; else echo 'default'; ?>/bootstrap.min.css" rel="stylesheet">
