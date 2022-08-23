@@ -37,19 +37,21 @@
                             <a class="nav-link" href="<?php echo $settings_custom_link_3_adress;?>"><?php echo $settings_custom_link_3_name;?></a>
                         </li>
                     <?php endif; ?>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle <?php if(in_array($page_name, $nav_active_dropdown_dashboard)) echo 'active'; ?>" href="#" id="Dashboard-Nav-Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fas fa-tachometer-alt"></i> <?php echo NAVBAR_DASHBOARD;?>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right shadow-sm" aria-labelledby="Dashboard-Na v-Dropdown">
-                            <a class="dropdown-item <?php echo nav_active('Home - Dashboard'); ?>" href="index.php"><i class="fas fa-home"></i> <?php echo NAVBAR_HOME;?></a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item <?php echo nav_active('Top Players - Dashboard'); ?>" href="dashboard-players.php"><i class="fas fa-users"></i> <?php echo NAVBAR_TOP_PLAYERS;?></a>
-                            <a class="dropdown-item <?php echo nav_active('Maps - Dashboard'); ?>" href="dashboard-maps.php"><i class="fas fa-map"></i> <?php echo NAVBAR_MAPS;?></a>
-                            <a class="dropdown-item <?php echo nav_active('Most Active - Dashboard'); ?>" href="dashboard-mostactive.php"><i class="fas fa-user-clock"></i> <?php echo NAVBAR_MOST_ACTIVE;?></a>
-                            <a class="dropdown-item <?php echo nav_active('Recent Records - Dashboard'); ?>" href="dashboard-recent.php"><i class="fas fa-stopwatch"></i> <?php echo NAVBAR_RECENT_RECORDS;?></a>
-
-                        </div>
+                    
+                    <li class="nav-item">
+                            <a class="nav-link <?php echo nav_active('Home - Dashboard'); ?>" href="index.php"><i class="fas fa-home"></i> <?php echo NAVBAR_HOME;?></a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link <?php echo nav_active('Top Players - Dashboard'); ?>" href="dashboard-players.php"><i class="fas fa-users"></i> <?php echo NAVBAR_TOP_PLAYERS;?></a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link <?php echo nav_active('Maps - Dashboard'); ?>" href="dashboard-maps.php"><i class="fas fa-map"></i> <?php echo NAVBAR_MAPS;?></a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link <?php echo nav_active('Most Active - Dashboard'); ?>" href="dashboard-mostactive.php"><i class="fas fa-user-clock"></i> <?php echo NAVBAR_MOST_ACTIVE;?></a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link <?php echo nav_active('Recent Records - Dashboard'); ?>" href="dashboard-recent.php"><i class="fas fa-stopwatch"></i> <?php echo NAVBAR_RECENT_RECORDS;?></a>
                     </li>
                     <?php if($settings_language_enable): ?>
                         <div class="dropdown">
