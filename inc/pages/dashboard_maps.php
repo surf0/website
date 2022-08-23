@@ -446,6 +446,9 @@ endif;
                     </div>
                 </div>
             </div>
+            <div class="map-image">
+                <img src="https://raw.githubusercontent.com/Sayt123/SurfMapPics/Maps-and-bonuses/csgo/<?php echo $mapname; ?>.jpg" alt="<?php echo $mapname; ?>">
+            </div>
             <h5 class="text-center my-1"><?php echo MAPS_TOTAL_COMPLETIONS; ?></h5>
             <div class="row justify-content-md-center">
                 <div class="col-12 col-md-auto text-center">
