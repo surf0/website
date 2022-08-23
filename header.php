@@ -8,9 +8,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <?php if($page_name === 'Player Profile - Dashboard'): ?>
-            <title><?php echo $player_id; ?> - Player Profile - Dashboard - Surf Stats</title>
+            <title>surf0 - <?php echo $player_id; ?> - Player Profile - Dashboard - Surf Stats</title>
         <?php else: ?>
-            <title><?php echo $page_name; ?> - Surf Stats</title>
+            <title>surf0 - <?php echo $page_name; ?> - Surf Stats</title>
         <?php endif; ?>
         
         <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
