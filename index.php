@@ -13,11 +13,23 @@
 
             <section class="my-4 pb-1">
 
-                <h5><?php echo NAVBAR_DASHBOARD;?></h5>
-                <hr class="my-0">
-                <div class="mt-4 mb-4">
-                <a class="btn btn-primary" href="steam://connect/161.97.117.64:27015" role="button">Connect to Server</a>
+                <div class="imageContainer">
+                    <div class="blur container">
+                        <img src="./images/logo.png" height="100">
+                        <div class="grid">
+                            <div class="col-sm">
+                                <a class="btn btn-primary" href="steam://connect/161.97.117.64:27015" role="button">Connect to Server #1</a>
+                            </div>
+                            <div class="col-sm">
+                                <a class="btn btn-outline-primary" href="https://discord.gg/gNUsvEuZ3d" role="button">Discord</a>
+                            </div>
+                            <div class="col-sm">
+                                <a class="btn btn-outline-primary" href="https://steamcommunity.com/groups/surf0" role="button">Steam Community</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                
                 <div class="mt-4 mb-4"> <!-- Info Badges -->
                     <div class="row">
                         <div class="col-md col-12">
