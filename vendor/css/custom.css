@@ -73,7 +73,7 @@ html {
     
   background: url("/images/title.jpg") center;
   background-size: cover;
-  height: 400;
+  height: 400px;
 }
 
 .blur  {
@@ -84,4 +84,14 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.button-row {
+  text-align: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.button-row > * {
+  padding: 10px;
 }

@@ -16,7 +16,7 @@
                 <div class="imageContainer">
                     <div class="blur container">
                         <img src="./images/logo.png" height="100">
-                        <div class="grid">
+                        <div class="row button-row">
                             <div class="col-sm">
                                 <a class="btn btn-primary" href="steam://connect/161.97.117.64:27015" role="button">Connect to Server #1</a>
                             </div>
