@@ -95,3 +95,10 @@ html {
 .button-row > * {
   padding: 10px;
 }
+
+.map-image {
+  padding: 20px;
+}
+.map-image img {
+  width: 100%;
+}
