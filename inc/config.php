@@ -32,7 +32,7 @@
     $settings_theme                 = "cyborg";        // Options are upper
     $settings_link_color            = "link-light"; // Options are upper
     $settings_favicon               = "logo.svg";
-    $settings_navbar_logo           = "";
+    $settings_navbar_logo           = "logo.png";
     $settings_background_image      = "";               // EXAMPLE: surf-images/4old.jpg
     $settings_navbar_title          = "Surf Stats";
     $settings_player_profile_icon   = TRUE;            // TRUE or FALSE # FALSE will disable player profile icons
