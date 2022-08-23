@@ -44,10 +44,6 @@ html {
   background-color: #007bc7;
 }
 
-.bg-stripped-color{
-  background-color: #F2F2F2;
-}
-
 .bg-navbar-grad{
   background: rgb(209,209,209);
   background: radial-gradient(circle, rgba(209,209,209,1) 0%, rgba(210,210,210,1) 50%, rgba(255,255,255,1) 100%);

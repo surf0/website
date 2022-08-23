@@ -554,7 +554,7 @@
         <div class="row">
             <?php foreach($map_tier_completions as $map_tier_completion): ?>
                 <div class="col-12 col-md">
-                    <div class="bg-stripped-color py-2 my-3 text-center rounded shadow-sm">
+                    <div class=" py-2 my-3 text-center rounded shadow-sm">
                         <h5 class='my-2'><?php echo TABLE_TIER;?> <strong><?php echo $map_tier_completion[0];?></strong></h5>
                         <h5 class="my-1"><small><i class="fas fa-map"></i> <?php echo TABLE_MAPS;?></small><br><strong><?php echo $map_tier_completion[1]; ?></strong> / <?php echo $map_tier_completion[2]; ?> <small class="text-muted">(<?php echo $map_tier_completion[3]; ?>%)</small></h5>
                         <h6 class="my-1"><small><i class="fas fa-bold"></i> <?php echo TABLE_BONUSES;?></small><br><strong><?php echo $map_tier_completion[4]; ?></strong> / <?php echo $map_tier_completion[5]; ?> <small class="text-muted">(<?php echo $map_tier_completion[6]; ?>%)</small></h6>
