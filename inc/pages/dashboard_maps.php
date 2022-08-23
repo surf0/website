@@ -522,6 +522,9 @@ endif;
                     <?php $map_bonuses_completions_number = 0; foreach($map_bonuses_completions as $map_bonuses_completion): ++$map_bonuses_completions_number; ?>
                         <div class="tab-pane fade<?php if($map_bonuses_completions_number=='1') echo ' show active'; ?>" id='bonuses-content-<?php echo $map_bonuses_completions_number; ?>' role="tabpanel" aria-labelledby="bonuses-content-<?php echo $map_bonuses_completions_number; ?>-tab" tabindex="0">
                             <?php if(!empty($map_bonuses_completion)): ?>
+                                <div class="map-image">
+                                    <img src="https://raw.githubusercontent.com/Sayt123/SurfMapPics/Maps-and-bonuses/csgo/<?php echo $mapname; ?>_b<?php echo $map_bonuses_completions_number; ?>.jpg" alt="<?php echo $mapname; ?>">
+                                </div>
                                 <div class="table-responsive">
                                     <table class="table table-hover table-striped  border table-sm shadow-sm py-0 my-0 nowrap" style="width:100%" id="bonuses-completions-<?php echo $map_bonuses_completions_number; ?>">
                                         <thead>
