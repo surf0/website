@@ -18,13 +18,13 @@
                         <img src="./images/logo.png" height="100">
                         <div class="row button-row">
                             <div class="col-sm">
-                                <a class="btn btn-primary" href="steam://connect/161.97.117.64:27015" role="button">Connect to Server #1</a>
-                            </div>
-                            <div class="col-sm">
                                 <a class="btn btn-outline-primary" href="https://discord.gg/gNUsvEuZ3d" target="_blank" rel="noopener" role="button">Discord</a>
                             </div>
                             <div class="col-sm">
-                                <a class="btn btn-outline-primary" href="https://steamcommunity.com/groups/surf0" target="_blank" rel="noopener" role="button">Steam Community</a>
+                                <a class="btn btn-outline-primary" href="https://steamcommunity.com/groups/surf0" target="_blank" rel="noopener" role="button">Steam</a>
+                            </div>
+                            <div class="col-sm">
+                                <a class="btn btn-outline-primary" href="https://www.youtube.com/channel/UCwXXZtJLFx32fwrvU_M3JWQ" target="_blank" rel="noopener" role="button">YouTube</a>
                             </div>
                         </div>
                     </div>
