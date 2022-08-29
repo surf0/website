@@ -4,11 +4,12 @@
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
 
 /*  Database Config */
+require_once('secret.php');
 
     $db_host = '127.0.0.1';            // DB Hostame
     $db_port = '3306';                          // DB Port (Default: 3306)
-    $db_username = '***REMOVED***';    // DB Username
-    $db_password = '***REMOVED***';    // DB Password
+    $db_username = $DB_USER;    // DB Username
+    $db_password = $DB_PW;    // DB Password
     $db_database = 'surftimer';        // DB Database
 
 /* End of  Database Config */

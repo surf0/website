@@ -76,7 +76,7 @@
                 </div>
 
                 <?php
-                    $url = "https://api.steampowered.com/IGameServersService/GetServerList/v1/?key=***REMOVED***&filter=addr\\62.171.171.235";
+                    $url = "https://api.steampowered.com/IGameServersService/GetServerList/v1/?key=$STEAM_API_KEY&filter=addr\\62.171.171.235";
                     $json = file_get_contents($url);
                     $table2 = json_decode($json, true);
                     $servers = $table2["response"]["servers"];
