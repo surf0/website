@@ -1,3 +1,9 @@
-# surf0-web
+# website
 
-font: https://fonts.google.com/specimen/K2D
+Website for **surf0** CSGO and CSS surf servers
+- Server List
+- Records
+- Leaderboards
+- Player Profiles
+
+Forked from [SurfTimer Web Stats](https://github.com/surftimer/SurfTimer-Web-Stats)
