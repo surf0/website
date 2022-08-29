@@ -29,7 +29,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="mt-4 mb-4"> <!-- Info Badges -->
                     <div class="row">
                         <div class="col-md col-12">
@@ -74,6 +74,72 @@
                         </div>
                     </div>
                 </div>
+
+                <?php
+                    $url = "https://api.steampowered.com/IGameServersService/GetServerList/v1/?key=***REMOVED***&filter=addr\\62.171.171.235";
+                    $json = file_get_contents($url);
+                    $table2 = json_decode($json, true);
+                    $servers = $table2["response"]["servers"];
+                ?>
+
+                <div class="row ">
+                    <div class="col-12"> <!-- Server List-->
+                        <div class="mb-3">
+                            <div class="card card-body border-secondary bg-card-black shadow-sm">
+                                <div class="card-header">
+                                    <div class="row">
+                                        <div class="col col-md-9">
+                                            <span class="align-middle">Server List</span>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-hover shadow-sm card-body border-secondary bg-card-black table-sm py-0 my-0">
+                                        <thead>
+                                        <tr>
+                                            <th class="text-left px-3" scope="col">Name</th>
+                                            <th class="text-center" scope="col">Map name</th>
+                                            <th class="text-center" scope="col">Players</th>
+                                            <th class="text-center" scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php server("Very Easy [Tier 1]","85568392925175846", $servers) ?>
+                                        <?php server("Easy [Tier 1-2]","85568392925187498", $servers) ?>
+                                        <?php server("Medium [Tier 2-3]","85568392925188366", $servers) ?>
+                                        <?php server("Hard [Tier 3-8]","85568392925188368", $servers) ?>
+                                        <?php server("All Maps [Tier 1-8]","85568392925188370", $servers) ?>
+                                    </tbody>
+                                    
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <?php
+                function server($name,$id, $servers) {
+                    $server_key = array_search($id, array_column($servers, 'steamid'));
+                    $server = $servers[$server_key];
+                    ?>
+                    <tr>
+                        <td class="px-3 align-middle"><?php echo $name?></td>
+                        <td class="text-center align-middle"><?php echo MapPageLink($server["map"]);?></td>
+                        <td class="text-center align-middle">
+                            <?php echo $server['players']?>/<?php echo $server['max_players']?> (<?php echo $server['bots']?> bots)
+                        </td>
+                        <td class="text-center align-middle">
+                            <a class="btn btn-primary" href="steam://connect/<?php echo $server['addr'] ?>">
+                                Connect
+                            </a>
+                        </td>
+                    </tr>
+                    <?php
+                }
+                ?>
 
                 <div class="row">
                     <div class="col-12"> <!-- Recent Records -->
