@@ -102,3 +102,11 @@ html {
 .map-image img {
   width: 100%;
 }
+
+.nav-tabs .nav-link.active {
+  background-color: #282828;
+}
+
+.text-muted {
+  color:#888!important;
+}
