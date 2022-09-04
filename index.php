@@ -18,13 +18,13 @@
                         <img src="./images/logo.png" height="100">
                         <div class="row button-row">
                             <div class="col-sm">
-                                <a class="btn btn-outline-primary" href="https://discord.gg/gNUsvEuZ3d" target="_blank" rel="noopener" role="button">Discord</a>
+                                <a class="btn btn-outline-primary" href="https://discord.gg/gNUsvEuZ3d" target="_blank" rel="noopener" role="button"  aria-label="Left Align"><span class="fa-brands fa-discord" aria-hidden="true"></span> Discord</a>
                             </div>
                             <div class="col-sm">
-                                <a class="btn btn-outline-primary" href="https://steamcommunity.com/groups/surf0" target="_blank" rel="noopener" role="button">Steam</a>
+                                <a class="btn btn-outline-primary" href="https://steamcommunity.com/groups/surf0" target="_blank" rel="noopener" role="button" aria-label="Left Align"><span class="fa-brands fa-steam" aria-hidden="true"></span> Steam&nbsp;Group</a>
                             </div>
                             <div class="col-sm">
-                                <a class="btn btn-outline-primary" href="https://www.youtube.com/channel/UCwXXZtJLFx32fwrvU_M3JWQ" target="_blank" rel="noopener" role="button">YouTube</a>
+                                <a class="btn btn-outline-primary" href="https://www.youtube.com/channel/UCwXXZtJLFx32fwrvU_M3JWQ" target="_blank" rel="noopener" role="button" aria-label="Left Align"><span class="fa-brands fa-youtube" aria-hidden="true"></span> YouTube</a>
                             </div>
                         </div>
                     </div>
