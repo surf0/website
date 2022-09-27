@@ -42,9 +42,6 @@
                             <a class="nav-link <?php echo nav_active('Home - Dashboard'); ?>" href="index.php"><i class="fas fa-home"></i> <?php echo NAVBAR_HOME;?></a>
                     </li>
                     <li class="nav-item">
-                            <a class="nav-link" href="https://wiki.surf0.net/" target="_blank"><i class="fas fa-book"></i> Wiki</a>
-                    </li>
-                    <li class="nav-item">
                             <a class="nav-link <?php echo nav_active('Top Players - Dashboard'); ?>" href="dashboard-players.php"><i class="fas fa-users"></i> <?php echo NAVBAR_TOP_PLAYERS;?></a>
                     </li>
                     <li class="nav-item">
