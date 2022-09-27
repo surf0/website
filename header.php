@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="description" content="Surf Stats">
+        <meta name="description" content="Surf Stats for surf0 CSGO Surf Servers">
         <meta name="keywords" content="SurfStats,CSGO,surftimer,Surf,Surf Servers">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
