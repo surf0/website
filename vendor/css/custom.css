@@ -123,3 +123,20 @@ html {
 .text-muted {
   color:#888!important;
 }
+
+.collapse-link::before {
+  content: '\f107';
+  font-family: 'FontAwesome';
+}
+
+.accordion-toggle[aria-expanded='true'] .collapse-link::before {
+  content: '\f106';
+}
+
+.hiddenRow {
+  padding: 0!important;
+}
+
+.no-players {
+  text-align: center;
+}
