@@ -16,6 +16,16 @@ function toCommunityID($id) {
         return $id;
     }
 };
+
+function toSteamID64($id) {
+    if (preg_match('/^STEAM_/', $id)) {
+        $parts = explode(':', $id);
+        return  intval($parts[2]) * 2 +  76561197960265728 + intval($parts[1]);
+    } else {
+        return 0;
+    }
+};
+
 function toSteamID($id) {
     if (is_numeric($id) && strlen($id) >= 16) {
         $z = bcdiv(bcsub($id, '76561197960265728'), '2');
@@ -92,7 +102,7 @@ function LinkColor(){
 
 $LinkColor = LinkColor();
 
-function PlayerUsernameProfile($player_steamid64, $player_name) {
+function PlayerUsernameProfile($player_steamid64, $player_name, $steam_only = false) {
     global $settings_player_profile_icon, $LinkColor;
 
     if($player_name=='          ' || $player_name==''){
@@ -100,8 +110,9 @@ function PlayerUsernameProfile($player_steamid64, $player_name) {
         $player_name_title = '(Unknown)'; 
     } else 
         $player_name_title = $player_name;
-        
-    if($settings_player_profile_icon)
+    if ($steam_only)
+        return $player_name.'<a href="https://steamcommunity.com/profiles/'.$player_steamid64.'" target="_blank" title="'.$player_name_title.' - Steam Profile" class="link-secondary text-decoration-none"><i class="fab fa-steam"></i></a>';
+    else if($settings_player_profile_icon)
         return $player_name.' <a href="dashboard-player.php?id='.$player_steamid64.'" target="" title="'.$player_name_title.' - Surf Profile" class="link-secondary text-decoration-none"><i class="fas fa-user-circle"></i></a> <a href="https://steamcommunity.com/profiles/'.$player_steamid64.'" target="_blank" title="'.$player_name_title.' - Steam Profile" class="link-secondary text-decoration-none"><i class="fab fa-steam"></i></a>';
     else
         return  '<a href="dashboard-player.php?id='.$player_steamid64.'" title="'.$player_name_title.' - Surf Profile" class="'.$LinkColor.' text-decoration-none">'.$player_name.'</a>';

@@ -1,4 +1,5 @@
 <?php
+
     $page_name = 'Home - Dashboard';
     
     require_once('./inc/includes.php');
@@ -114,7 +115,7 @@
                                             <th class="text-center" scope="col"></th>
                                         </tr>
                                     </thead>
-                                    <tbody>
+                                    <tbody class="accordion" id="accordionServers">
                                         <?php server("Very Easy [Tier 1]","85568392925175846", $servers) ?>
                                         <?php server("Easy [Tier 1-2]","85568392925187498", $servers) ?>
                                         <?php server("Medium [Tier 2-3]","85568392925188366", $servers) ?>
@@ -131,12 +132,17 @@
                 </div>
 
                 <?php
+                
+
                 function server($name,$id, $servers) {
                     $server_key = array_search($id, array_column($servers, 'steamid'));
                     $server = $servers[$server_key];
+                    
+                    $Players = getPlayers($server['addr']);
+
                     ?>
-                    <tr>
-                        <td class="px-3 align-middle"><?php echo $name?></td>
+                    <tr data-bs-toggle="collapse" data-bs-target="#accordion<?php echo $id?>" class="accordion-toggle" aria-expanded="false">
+                        <td class="px-3 align-middle"><i class="collapse-link"></i>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $name?></td>
                         <td class="text-center align-middle"><?php echo MapPageLink($server["map"]);?></td>
                         <td class="text-center align-middle">
                             <?php echo $server['players']?>/<?php echo $server['max_players']?> (<?php echo $server['bots']?> bots)
@@ -145,6 +151,49 @@
                             <a class="btn btn-primary" href="steam://connect/<?php echo $server['addr'] ?>">
                                 Connect
                             </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="hiddenRow">
+                            <div id="accordion<?php echo $id?>" class="collapse accordion-collapse" data-bs-parent="#accordionServers">
+                                <div class="accordion-body">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Player <span class="label label-info"><?php echo count( $Players ); ?></span></th>
+                                            <th>Time</th>
+                                            <th>Rank</th>
+                                            <th>Points</th>
+                                            <th>WRs</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php if( !empty( $Players ) ): ?>
+                                            <?php foreach( $Players as $Player ): ?>
+                                                <tr>
+
+                                                    <td><?php if($config_player_flags) echo CountryFlag($Player['country'], $Player['countryCode'], $Player['continentCode']); ?> <?php echo PlayerUsernameProfile($Player['steamid64'], $Player['name'], $steam_only = !$Player['ranked']); ?></td>
+                                                    <td><?php echo $Player[ 'time' ]; ?></td>
+                                                    <?php if(  $Player['ranked'] ) : ?>
+                                                        <td><?php echo $Player[ 'rank' ]; ?></td>
+                                                        <td><?php echo $Player[ 'points' ]; ?></td>
+                                                        <td><?php echo $Player[ 'wrs' ]; ?></td>
+                                                    <?php else: ?>
+                                                        <tr>
+                                                            <td colspan="3" class="no-players">Unranked</td>
+                                                        </tr>
+                                                    <?php endif; ?>
+                                                </tr>
+                                            <?php endforeach; ?>
+                                        <?php else: ?>
+                                                <tr>
+                                                    <td colspan="5" class="no-players">No players</td>
+                                                </tr>
+                                        <?php endif; ?>
+                                    </tbody>
+				                </table>
+                                </div>
+                            </div>
                         </td>
                     </tr>
                     <?php
