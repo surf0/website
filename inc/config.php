@@ -63,6 +63,6 @@ require_once('secret.php');
     $settings_language_enable       = TRUE;         // Default: TRUE - To disable language selector change to FALSE.
     $settings_language_default      = "English";    // Czech, Danish, English, French, Portuguese, Slovak, Turkish
     $settings_player_flags          = TRUE;         // Default: TRUE - To disable player flags change to FALSE
-    $settings_maps_download_url     = '';           // To disable remain empty EXAMPLE: http://example.com/maps/
+    $settings_maps_download_url     = 'http://fastdl-go.surf0.net/csgo/maps/';           // To disable remain empty EXAMPLE: http://example.com/maps/
 
 /* End of General Settings */
