@@ -73,7 +73,13 @@ html {
     
   background: url("/images/title.jpg") center;
   background-size: cover;
-  height: 450px;
+  height: 500px;
+}
+
+@media only screen and (max-width: 600px) {
+  .imageContainer {
+    height: 700px;
+  }
 }
 
 .image-title {
