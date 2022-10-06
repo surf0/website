@@ -73,11 +73,11 @@ html {
     
   background: url("/images/title.jpg") center;
   background-size: cover;
-  height: 400px;
+  height: 450px;
 }
 
 .blur  {
-  backdrop-filter: blur(10px) brightness(30%);
+  backdrop-filter: blur(5px) brightness(30%);
   height: 100%;
   width: 100%;
   display: flex;
