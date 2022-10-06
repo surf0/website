@@ -14,21 +14,27 @@
             <section class="my-4 pb-1">
 
                 <div class="imageContainer">
-                    <div class="blur container">
-                        <img src="./images/logo.png" height="100">
-                        <p>CSGO Surf Servers</p>
+                    <div class="blur container title-container">
+                        <div class="title-space"></div>
+                        <div class="image-title">
+                            <img src="./images/logo.png" height="100">
+                            <p>CS:GO Surf Servers</p>
+                        </div>
                         <div class="row button-row">
                             <div class="col-sm">
-                                <a class="btn btn-outline-primary" href="https://discord.gg/gNUsvEuZ3d" target="_blank" rel="noopener" role="button"  aria-label="Left Align"><span class="fa-brands fa-discord" aria-hidden="true"></span> Discord</a>
+                                <a class="btn btn-outline-primary" href="https://discord.gg/gNUsvEuZ3d" target="_blank" rel="noopener" role="button"  aria-label="Left Align"><span class="fa-brands fa-discord" aria-hidden="true"></span><br> Discord</a>
                             </div>
                             <div class="col-sm">
-                                <a class="btn btn-outline-primary" href="https://wiki.surf0.net/" target="_blank" rel="noopener" role="button"  aria-label="Left Align"><span class="fas fa-book" aria-hidden="true"></span> Surf Wiki</a>
+                                <a class="btn btn-outline-primary" href="https://wiki.surf0.net/" target="_blank" rel="noopener" role="button"  aria-label="Left Align"><span class="fas fa-book" aria-hidden="true"></span><br>Surf Wiki</a>
+                            </div>
+                            <div class="col-sm">
+                                <a class="btn btn-outline-primary" href="https://css.surf0.net/" target="_blank" rel="noopener" role="button"  aria-label="Left Align"><span class="fas fa-server" aria-hidden="true"></span> CS:S&nbsp;Server</a>
                             </div>
                             <div class="col-sm">
                                 <a class="btn btn-outline-primary" href="https://steamcommunity.com/groups/surf0" target="_blank" rel="noopener" role="button" aria-label="Left Align"><span class="fa-brands fa-steam" aria-hidden="true"></span> Steam&nbsp;Group</a>
                             </div>
                             <div class="col-sm">
-                                <a class="btn btn-outline-primary" href="https://www.youtube.com/channel/UCwXXZtJLFx32fwrvU_M3JWQ" target="_blank" rel="noopener" role="button" aria-label="Left Align"><span class="fa-brands fa-youtube" aria-hidden="true"></span> YouTube</a>
+                                <a class="btn btn-outline-primary" href="https://www.youtube.com/channel/UCwXXZtJLFx32fwrvU_M3JWQ" target="_blank" rel="noopener" role="button" aria-label="Left Align"><span class="fa-brands fa-youtube" aria-hidden="true"></span><br> YouTube</a>
                             </div>
                         </div>
                     </div>
