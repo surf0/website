@@ -217,6 +217,12 @@
             endif;
         endif;
     endif;
+
+    // steam profile picture
+
+    $json = file_get_contents("http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key={$STEAM_API_KEY}&steamids={$usr_steamid64}");
+    $steam_parsed = json_decode($json);
+    $avatar = $steam_parsed->response->players[0]->avatarfull;
 ?>
 
 <script>
@@ -405,6 +411,7 @@
     <h5><a href="dashboard-players.php" class="text-muted text-decoration-none"> <?php echo PROFILE_PLAYER_PROFILE;?></a> / <?php echo $usr_steamid64; ?> <a href="https://steamcommunity.com/profiles/<?php echo $usr_steamid64; ?>" target="_blank" title="<?php echo $usr_name; ?> - Steam Profile" class="link-secondary text-decoration-none"><i class="fab fa-steam"></i></a></h5>
     <hr class="mt-0 mb-3">
     <div class="pt-3 pb-2">
+            <img class="player-avatar mx-auto d-block" src="<?php echo $avatar?>"></img>
         <h3 class="text-center"><?php echo $usr_name; ?></h3>
         <h4 class="text-center text-muted mb-2"><?php if($config_player_flags) {echo CountryFlagProfile($usr_countryCode, $usr_continentCode).' ';}; echo $usr_country; ?></h4>
         <div class="row justify-content-md-center mb-2">
