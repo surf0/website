@@ -86,13 +86,6 @@
                     </div>
                 </div>
 
-                <?php
-                    $url = "https://api.steampowered.com/IGameServersService/GetServerList/v1/?key=$STEAM_API_KEY&filter=addr\\62.171.171.235";
-                    $json = file_get_contents($url);
-                    $table2 = json_decode($json, true);
-                    $servers = $table2["response"]["servers"];
-                ?>
-
                 <div class="row ">
                     <div class="col-12"> <!-- Server List-->
                         <div class="mb-3">
@@ -116,12 +109,13 @@
                                             <th class="text-center py-3" scope="col"></th>
                                         </tr>
                                     </thead>
+
                                     <tbody class="accordion" id="accordionServers">
-                                        <?php server("Very Easy [Tier 1]","85568392925175846", $servers) ?>
-                                        <?php server("Easy [Tier 1-2]","85568392925187498", $servers) ?>
-                                        <?php server("Medium [Tier 2-3]","85568392925188366", $servers) ?>
-                                        <?php server("Hard [Tier 3-8]","85568392925188368", $servers) ?>
-                                        <?php server("All Maps [Tier 1-8]","85568392925188370", $servers) ?>
+                                        <?php Server("Very Easy [Tier 1]","85568392925175846") ?>
+                                        <?php Server("Easy [Tier 1-2]","85568392925187498") ?>
+                                        <?php Server("Medium [Tier 2-3]","85568392925188366") ?>
+                                        <?php Server("Hard [Tier 3-8]","85568392925188368") ?>
+                                        <?php Server("All Maps [Tier 1-8]","85568392925188370") ?>
                                     </tbody>
                                     
                                     </table>
@@ -132,73 +126,6 @@
 
                 </div>
 
-                <?php
-                
-
-                function server($name,$id, $servers) {
-                    $server_key = array_search($id, array_column($servers, 'steamid'));
-                    $server = $servers[$server_key];
-                    
-                    $Players = getPlayers($server['addr']);
-
-                    ?>
-                    <tr>
-                        <td class="text-center align-middle accordion-toggle" data-bs-toggle="collapse" data-bs-target="#accordion<?php echo $id?>" aria-expanded="false"><i class="collapse-link"></i></td>
-                        <td class="align-middle" data-bs-toggle="collapse" data-bs-target="#accordion<?php echo $id?>"><?php echo $name?></td>
-                        <td class="text-center align-middle"><?php echo MapPageLink($server["map"]);?></td>
-                        <td class="text-center align-middle" data-bs-toggle="collapse" data-bs-target="#accordion<?php echo $id?>">
-                            <?php echo $server['players']?>/<?php echo $server['max_players']?> (<?php echo $server['bots']?> bots)
-                        </td>
-                        <td class="text-center align-middle py-2">
-                            <a class="btn btn-primary" href="steam://connect/<?php echo $server['addr'] ?>">
-                            <i class="fab fa-steam"></i> Connect
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="5" class="hiddenRow">
-                            <div id="accordion<?php echo $id?>" class="collapse accordion-collapse" data-bs-parent="#accordionServers">
-                                <div class="accordion-body">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>Player <span class="label label-info"><?php echo count( $Players ); ?></span></th>
-                                            <th>Time</th>
-                                            <th>Rank</th>
-                                            <th>Points</th>
-                                            <th>WRs</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <?php if( !empty( $Players ) ): ?>
-                                            <?php foreach( $Players as $Player ): ?>
-                                                <tr>
-
-                                                    <td><?php if($config_player_flags) echo CountryFlag($Player['country'], $Player['countryCode'], $Player['continentCode']); ?> <?php echo PlayerUsernameProfile($Player['steamid64'], $Player['name'], $steam_only = !$Player['ranked']); ?></td>
-                                                    <td><?php echo $Player[ 'time' ]; ?></td>
-                                                    <?php if(  $Player['ranked'] ) : ?>
-                                                        <td><?php echo $Player[ 'rank' ]; ?></td>
-                                                        <td><?php echo $Player[ 'points' ]; ?></td>
-                                                        <td><?php echo $Player[ 'wrs' ]; ?></td>
-                                                    <?php else: ?>
-                                                        <td colspan="3" class="no-players">Unranked</td>
-                                                    <?php endif; ?>
-                                                </tr>
-                                            <?php endforeach; ?>
-                                        <?php else: ?>
-                                                <tr>
-                                                    <td colspan="5" class="no-players">No players</td>
-                                                </tr>
-                                        <?php endif; ?>
-                                    </tbody>
-				                </table>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <?php
-                }
-                ?>
 
                 <div class="row">
                     <div class="col-12"> <!-- Recent Records -->
