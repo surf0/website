@@ -8,8 +8,6 @@ function getPlayers($ip) {
 
     $addr = explode(':',$ip);
     $Query = new SourceQuery( );
-    $players = []; 
-    $Info    = [];
     $Exception = null;
     $lines = [];
 
@@ -29,8 +27,6 @@ function getPlayers($ip) {
         $Query->Disconnect( );
     }
 
-   
-
 
     $steamids = [];
     $users = [];
@@ -47,7 +43,6 @@ function getPlayers($ip) {
         }
 
     }
-    // echo print_r($steamids);
 
 
     $Players = [];
