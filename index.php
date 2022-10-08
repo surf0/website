@@ -100,19 +100,20 @@
                                 <div class="card-header">
                                     <div class="row">
                                         <div class="col col-md-9">
-                                            <span class="align-middle">Server List</span>
+                                            <h5 class="align-middle"><b>Server List</b></h5>
                                         </div>
                                         
                                     </div>
                                 </div>
                                 <div class="table-responsive">
                                     <table class="table table-hover shadow-sm card-body border-secondary bg-card-black table-sm py-0 my-0">
-                                        <thead>
-                                        <tr>
-                                            <th class="text-left px-3" scope="col">Name</th>
-                                            <th class="text-center" scope="col">Map name</th>
-                                            <th class="text-center" scope="col">Players</th>
-                                            <th class="text-center" scope="col"></th>
+                                        <thead class="border">
+                                        <tr class=" ">
+                                            <th class="text-center py-3" scope="col"></th>
+                                            <th class="text-left py-3" scope="col"><i class="fas fa-server"></i> Server</th>
+                                            <th class="text-center py-3" scope="col"><i class="fas fa-map"></i> Map</th>
+                                            <th class="text-center py-3" scope="col"><i class="fas fa-user-friends"></i> Players</th>
+                                            <th class="text-center py-3" scope="col"></th>
                                         </tr>
                                     </thead>
                                     <tbody class="accordion" id="accordionServers">
@@ -141,20 +142,21 @@
                     $Players = getPlayers($server['addr']);
 
                     ?>
-                    <tr data-bs-toggle="collapse" data-bs-target="#accordion<?php echo $id?>" class="accordion-toggle" aria-expanded="false">
-                        <td class="px-3 align-middle"><i class="collapse-link"></i>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $name?></td>
+                    <tr>
+                        <td class="text-center align-middle accordion-toggle" data-bs-toggle="collapse" data-bs-target="#accordion<?php echo $id?>" aria-expanded="false"><i class="collapse-link"></i></td>
+                        <td class="align-middle" data-bs-toggle="collapse" data-bs-target="#accordion<?php echo $id?>"><?php echo $name?></td>
                         <td class="text-center align-middle"><?php echo MapPageLink($server["map"]);?></td>
-                        <td class="text-center align-middle">
+                        <td class="text-center align-middle" data-bs-toggle="collapse" data-bs-target="#accordion<?php echo $id?>">
                             <?php echo $server['players']?>/<?php echo $server['max_players']?> (<?php echo $server['bots']?> bots)
                         </td>
-                        <td class="text-center align-middle">
+                        <td class="text-center align-middle py-2">
                             <a class="btn btn-primary" href="steam://connect/<?php echo $server['addr'] ?>">
-                                Connect
+                            <i class="fab fa-steam"></i> Connect
                             </a>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="4" class="hiddenRow">
+                        <td colspan="5" class="hiddenRow">
                             <div id="accordion<?php echo $id?>" class="collapse accordion-collapse" data-bs-parent="#accordionServers">
                                 <div class="accordion-body">
                                 <table class="table">
@@ -179,9 +181,7 @@
                                                         <td><?php echo $Player[ 'points' ]; ?></td>
                                                         <td><?php echo $Player[ 'wrs' ]; ?></td>
                                                     <?php else: ?>
-                                                        <tr>
-                                                            <td colspan="3" class="no-players">Unranked</td>
-                                                        </tr>
+                                                        <td colspan="3" class="no-players">Unranked</td>
                                                     <?php endif; ?>
                                                 </tr>
                                             <?php endforeach; ?>
