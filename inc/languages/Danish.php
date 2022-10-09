@@ -30,6 +30,14 @@ define('HOME_TOP_STAGE_WR', 'Top 10 stage WR Holdere');
 define('HOME_RECENT_MAPS', 'Seneste tilføjede maps');
 define('HOME_BUTTON_SHOW_MORE', 'Vis mere');
 
+define('HOME_PLAYERS', 'Spillere');
+define('HOME_SERVER', 'Server');
+define('HOME_SERVER_LIST', 'Server Liste');
+define('HOME_CONNECT', 'Forbinde');
+define('HOME_NO_PLAYERS', 'Ingen spillere');
+define('HOME_UNRANKED', 'Ikke rangordnet');
+define('HOME_BOTS', 'Bots');
+
 define('TABLE_USERNAME', 'Brugernavn');
 define('TABLE_MAP', 'Map');
 define('TABLE_MAPS', 'Maps');

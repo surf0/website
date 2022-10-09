@@ -30,6 +30,14 @@ define('HOME_TOP_STAGE_WR', 'Top 10 stage WR Rekordhållare');
 define('HOME_RECENT_MAPS', 'Nyligen Tillagda Maps');
 define('HOME_BUTTON_SHOW_MORE', 'Visa Mer');
 
+define('HOME_PLAYERS', 'Spelare');
+define('HOME_SERVER', 'Server');
+define('HOME_SERVER_LIST', 'Serverlista');
+define('HOME_CONNECT', 'Ansluta');
+define('HOME_NO_PLAYERS', 'Inga Spelare');
+define('HOME_UNRANKED', 'Orankad');
+define('HOME_BOTS', 'Bots');
+
 define('TABLE_USERNAME', 'Användarnamn');
 define('TABLE_MAP', 'Karta');
 define('TABLE_MAPS', 'Maps');

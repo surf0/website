@@ -30,6 +30,14 @@ define('HOME_TOP_STAGE_WR', 'En iyi 10 stage WR holders');
 define('HOME_RECENT_MAPS', 'Son Eklenen Haritalar');
 define('HOME_BUTTON_SHOW_MORE', 'Daha Fazla');
 
+define('HOME_PLAYERS', 'Oyuncular');
+define('HOME_SERVER', 'Sunucu');
+define('HOME_SERVER_LIST', 'Sunucu listesi');
+define('HOME_CONNECT', 'Bağlan');
+define('HOME_NO_PLAYERS', 'Oyuncu Yok');
+define('HOME_UNRANKED', 'Rütbesiz');
+define('HOME_BOTS', 'Bots');
+
 define('TABLE_USERNAME', 'Kullanıcı Adı');
 define('TABLE_MAP', 'Harita');
 define('TABLE_MAPS', 'Haritalar');

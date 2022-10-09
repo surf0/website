@@ -30,6 +30,14 @@ define('HOME_TOP_STAGE_WR', 'Os 10 Melhores Jogadores com Recordes de Etapas');
 define('HOME_RECENT_MAPS', 'Mapas Adicionados Recentemente');
 define('HOME_BUTTON_SHOW_MORE', 'Ver Mais');
 
+define('HOME_PLAYERS', 'Jogadoras');
+define('HOME_SERVER', 'Servidor');
+define('HOME_SERVER_LIST', 'Lista de servidores');
+define('HOME_CONNECT', 'Conectar');
+define('HOME_NO_PLAYERS', 'Nenhum jogador');
+define('HOME_UNRANKED', 'Sem posição');
+define('HOME_BOTS', 'Bots');
+
 define('TABLE_USERNAME', 'Nome de Utilizador');
 define('TABLE_MAP', 'Mapa');
 define('TABLE_MAPS', 'Mapas');

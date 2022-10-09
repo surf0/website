@@ -30,6 +30,14 @@ define('HOME_TOP_STAGE_WR', 'Top 10 Stage Rekordhalter');
 define('HOME_RECENT_MAPS', 'Zuletzt hinzugefügte Karten');
 define('HOME_BUTTON_SHOW_MORE', 'Mehr Anzeigen');
 
+define('HOME_PLAYERS', 'Spieler');
+define('HOME_SERVER', 'Server');
+define('HOME_SERVER_LIST', 'Server Liste');
+define('HOME_CONNECT', 'Verbinden');
+define('HOME_NO_PLAYERS', 'Keine Spieler');
+define('HOME_UNRANKED', 'Kein Rang');
+define('HOME_BOTS', 'Bots');
+
 define('TABLE_USERNAME', 'Spielername');
 define('TABLE_MAP', 'Karte');
 define('TABLE_MAPS', 'Karten');

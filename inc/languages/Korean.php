@@ -30,6 +30,14 @@ define('HOME_TOP_STAGE_WR', '서버 스테이지 기록 보유 수');
 define('HOME_RECENT_MAPS', '최근 추가된 맵');
 define('HOME_BUTTON_SHOW_MORE', '더보기');
 
+define('HOME_PLAYERS', '선수');
+define('HOME_SERVER', '서버');
+define('HOME_SERVER_LIST', '서버 목록');
+define('HOME_CONNECT', '연결하다');
+define('HOME_NO_PLAYERS', '선수 없음');
+define('HOME_UNRANKED', '순위 없음');
+define('HOME_BOTS', '봇');
+
 define('TABLE_USERNAME', '닉네임');
 define('TABLE_MAP', '맵');
 define('TABLE_MAPS', '맵');

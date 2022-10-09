@@ -211,11 +211,11 @@ function Server($name,$id) {
         <td class="align-middle" data-bs-toggle="collapse" data-bs-target="#accordion<?php echo $id?>"><?php echo $name?></td>
         <td class="text-center align-middle"><?php echo MapPageLink($server["map"]);?></td>
         <td class="text-center align-middle" data-bs-toggle="collapse" data-bs-target="#accordion<?php echo $id?>">
-            <?php echo $server['players']?>/<?php echo $server['max_players']?> (<?php echo $server['bots']?> bots)
+            <?php echo $server['players']?>/<?php echo $server['max_players']?> (<?php echo $server['bots']?> <?php echo HOME_BOTS;?>)
         </td>
         <td class="text-center align-middle py-2">
             <a class="btn btn-primary" href="steam://connect/<?php echo $server['addr'] ?>">
-            <i class="fab fa-steam"></i> Connect
+            <i class="fab fa-steam"></i> <?php echo HOME_CONNECT;?> 
             </a>
         </td>
     </tr>
@@ -226,11 +226,11 @@ function Server($name,$id) {
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>Player <span class="label label-info"><?php echo count( $Players ); ?></span></th>
-                            <th>Time</th>
-                            <th>Rank</th>
-                            <th>Points</th>
-                            <th>WRs</th>
+                            <th><?php echo TABLE_USERNAME;?></th>
+                            <th><?php echo TABLE_TIME;?> </th>
+                            <th><?php echo TABLE_RANK;?> </th>
+                            <th><?php echo TABLE_POINTS;?> </th>
+                            <th><?php echo TABLE_WRS;?> </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -245,13 +245,13 @@ function Server($name,$id) {
                                         <td><?php echo $Player[ 'points' ]; ?></td>
                                         <td><?php echo $Player[ 'wrs' ]; ?></td>
                                     <?php else: ?>
-                                        <td colspan="3" class="no-players">Unranked</td>
+                                        <td colspan="3" class="no-players"><?php echo HOME_UNRANKED;?></td>
                                     <?php endif; ?>
                                 </tr>
                             <?php endforeach; ?>
                         <?php else: ?>
                                 <tr>
-                                    <td colspan="5" class="no-players">No players</td>
+                                    <td colspan="5" class="no-players"><?php echo HOME_NO_PLAYERS;?></td>
                                 </tr>
                         <?php endif; ?>
                     </tbody>

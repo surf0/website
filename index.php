@@ -93,7 +93,7 @@
                                 <div class="card-header">
                                     <div class="row">
                                         <div class="col col-md-9">
-                                            <h5 class="align-middle"><b>Server List</b></h5>
+                                            <h5 class="align-middle"><b><?php echo HOME_SERVER_LIST;?></b></h5>
                                         </div>
                                         
                                     </div>
@@ -103,9 +103,9 @@
                                         <thead class="border">
                                         <tr class=" ">
                                             <th class="text-center py-3" scope="col"></th>
-                                            <th class="text-left py-3" scope="col"><i class="fas fa-server"></i> Server</th>
-                                            <th class="text-center py-3" scope="col"><i class="fas fa-map"></i> Map</th>
-                                            <th class="text-center py-3" scope="col"><i class="fas fa-user-friends"></i> Players</th>
+                                            <th class="text-left py-3" scope="col"><i class="fas fa-server"></i> <?php echo HOME_SERVER;?></th>
+                                            <th class="text-center py-3" scope="col"><i class="fas fa-map"></i> <?php echo TABLE_MAP;?></th>
+                                            <th class="text-center py-3" scope="col"><i class="fas fa-user-friends"></i> <?php echo HOME_PLAYERS;?></th>
                                             <th class="text-center py-3" scope="col"></th>
                                         </tr>
                                     </thead>

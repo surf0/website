@@ -30,6 +30,14 @@ define('HOME_TOP_STAGE_WR', 'Top 10 stage WR holders');
 define('HOME_RECENT_MAPS', 'Recently added maps');
 define('HOME_BUTTON_SHOW_MORE', 'Show More');
 
+define('HOME_PLAYERS', 'Players');
+define('HOME_SERVER', 'Server');
+define('HOME_SERVER_LIST', 'Server List');
+define('HOME_CONNECT', 'Connect');
+define('HOME_NO_PLAYERS', 'No Players');
+define('HOME_UNRANKED', 'Unranked');
+define('HOME_BOTS', 'Bots');
+
 define('TABLE_USERNAME', 'Username');
 define('TABLE_MAP', 'Map');
 define('TABLE_MAPS', 'Maps');

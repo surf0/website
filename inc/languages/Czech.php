@@ -30,6 +30,14 @@ define('HOME_TOP_STAGE_WR', '10 nejlepších držitelů etapových WR');
 define('HOME_RECENT_MAPS', 'Nedávno přidané mapy');
 define('HOME_BUTTON_SHOW_MORE', 'Zobrazit více');
 
+define('HOME_PLAYERS', 'Hráči');
+define('HOME_SERVER', 'Server');
+define('HOME_SERVER_LIST', 'Seznam serverů');
+define('HOME_CONNECT', 'Připojit');
+define('HOME_NO_PLAYERS', 'Žádní hráči');
+define('HOME_UNRANKED', 'Nehodnoceno');
+define('HOME_BOTS', 'robotů');
+
 define('TABLE_USERNAME', 'Uživatelské jméno');
 define('TABLE_MAP', 'Mapa');
 define('TABLE_MAPS', 'Mapy');

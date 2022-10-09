@@ -30,6 +30,14 @@ define('HOME_TOP_STAGE_WR', 'Top 10 records niveaux');
 define('HOME_RECENT_MAPS', 'Maps ajoutées récemment');
 define('HOME_BUTTON_SHOW_MORE', 'Plus');
 
+define('HOME_PLAYERS', 'Joueurs');
+define('HOME_SERVER', 'Serveur');
+define('HOME_SERVER_LIST', 'Liste des serveurs');
+define('HOME_CONNECT', 'Relier');
+define('HOME_NO_PLAYERS', 'Pas de joueurs');
+define('HOME_UNRANKED', 'Sans rang');
+define('HOME_BOTS', 'Bots');
+
 define('TABLE_USERNAME', 'Nom d\'utilisateur');
 define('TABLE_MAP', 'Map');
 define('TABLE_MAPS', 'Maps');
