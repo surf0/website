@@ -19,6 +19,21 @@ if (isset($_GET['id'])){
         case 5:
             $ip = "62.171.171.235:27019";
             break;
+        case 6:
+            $ip = "62.171.171.235:27035";
+            break;
+        case 7:
+            $ip = "62.171.171.235:27106";
+            break;
+        case 8:
+            $ip = "62.171.171.235:27107";
+            break;
+        case 9:
+            $ip = "62.171.171.235:27108";
+            break;
+        case 10:
+            $ip = "62.171.171.235:27109";
+            break;
     }
     header("Location: steam://connect/$ip");
 
