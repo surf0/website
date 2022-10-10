@@ -33,10 +33,10 @@ define('HOME_BUTTON_SHOW_MORE', 'Zobrazit více');
 define('HOME_PLAYERS', 'Hráči');
 define('HOME_SERVER', 'Server');
 define('HOME_SERVER_LIST', 'Seznam serverů');
-define('HOME_CONNECT', 'Připojit');
+define('HOME_CONNECT', 'Připojit se');
 define('HOME_NO_PLAYERS', 'Žádní hráči');
 define('HOME_UNRANKED', 'Nehodnoceno');
-define('HOME_BOTS', 'robotů');
+define('HOME_BOTS', 'Botů');
 
 define('TABLE_USERNAME', 'Uživatelské jméno');
 define('TABLE_MAP', 'Mapa');
