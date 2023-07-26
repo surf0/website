@@ -2,8 +2,8 @@
 
     $page_name = 'Home - Dashboard';
     
-    require_once('./inc/includes.php');
-    require_once('./inc/pages/dashboard_home.php');
+    require_once('/inc/includes.php');
+    require_once('/inc/pages/dashboard_home.php');
 
     require_once('header.php');
     require_once('navbar.php');
