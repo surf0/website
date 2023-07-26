@@ -4,7 +4,7 @@
 // $db_conn_surftimer = new mysqli($db_host.':'.$db_port, $db_username, $db_password, $db_database);
 
 $db_conn_surftimer = mysqli_init();
-$db_conn_surftimer->ssl_set(NULL, NULL, "/etc/ssl/cert.pem", NULL, NULL);
+$db_conn_surftimer->ssl_set(NULL, NULL, "/etc/ssl/certs/ca-certificates.crt", NULL, NULL);
 $db_conn_surftimer->real_connect($db_host, $db_username, $db_password, $db_database);
 
 // Check connection
