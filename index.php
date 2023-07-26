@@ -154,7 +154,7 @@
                                                 <?php
                                                     $runtime_r10rs_data = $r10r['runtime'];    
                                                     $runtime_r10rs_microtime = substr($runtime_r10rs_data, strpos($runtime_r10rs_data, ".") + 1);    
-                                                    $runtime_r10rs_timeFormat = gmdate("H:i:s", $runtime_r10rs_data).'<span class=" ">.'.$runtime_r10rs_microtime.'</span>';
+                                                    $runtime_r10rs_timeFormat = gmdate("H:i:s", (int)$runtime_r10rs_data).'<span class=" ">.'.$runtime_r10rs_microtime.'</span>';
                                                     $dateFormat_r10rs = date('Y/m/d  (H:i)', strtotime($r10r['date']));
                                                 ?>
                                                 <tr>

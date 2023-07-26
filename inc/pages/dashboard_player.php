@@ -267,7 +267,7 @@
                     <?php
                         $player_wr_runtime = $player_wr['runtimepro'];
                         $player_wr_runtime_microtime = substr($player_wr_runtime, strpos($player_wr_runtime, ".") + 1);
-                        $player_wr_runtime_timeformat = gmdate("i:s", $player_wr['runtimepro']).'<span class="text-muted">.'.$player_wr_runtime_microtime.'</span>';
+                        $player_wr_runtime_timeformat = gmdate("i:s", (int) $player_wr['runtimepro']).'<span class="text-muted">.'.$player_wr_runtime_microtime.'</span>';
                         $player_wr_date = $player_wr['date'];
                         if($player_wr_date>'2021-03-03 10:49:50') 
                             $player_wr_date =  '<small class="">'.date('Y/m/d  (H:i)', strtotime($player_wr['date'])).'</small>';
@@ -326,7 +326,7 @@
                     <?php
                         $player_wrb_runtime = $player_wrb['runtime'];
                         $player_wrb_runtime_microtime = substr($player_wrb_runtime, strpos($player_wrb_runtime, ".") + 1);    
-                        $player_wrb_runtime_timeformat = gmdate("i:s", $player_wrb['runtime']).'<span class="text-muted">.'.$player_wrb_runtime_microtime.'</span>';
+                        $player_wrb_runtime_timeformat = gmdate("i:s", (int) $player_wrb['runtime']).'<span class="text-muted">.'.$player_wrb_runtime_microtime.'</span>';
                         $player_wrb_date = $player_wrb['date'];
                         if($player_wrb_date>'2021-03-03 10:51:48') 
                             $player_wrb_date =  '<small class="">'.date('Y/m/d  (H:i)', strtotime($player_wrb['date'])).'</small>';
@@ -385,7 +385,7 @@
                     <?php
                         $player_wrcp_runtime = $player_wrcp['runtimepro'];
                         $player_wrcp_runtime_microtime = substr($player_wrcp_runtime, strpos($player_wrcp_runtime, ".") + 1);    
-                        $player_wrcp_runtime_timeformat = gmdate("i:s", $player_wrcp['runtimepro']).'<span class="text-muted">.'.$player_wrcp_runtime_microtime.'</span>';
+                        $player_wrcp_runtime_timeformat = gmdate("i:s", (int) $player_wrcp['runtimepro']).'<span class="text-muted">.'.$player_wrcp_runtime_microtime.'</span>';
                         $player_wrcp_date = $player_wrcp['date'];
                         if($player_wrcp_date>'2021-03-03 10:51:31') 
                             $player_wrcp_date =  '<small class="">'.date('Y/m/d  (H:i)', strtotime($player_wrcp['date'])).'</small>';

@@ -51,7 +51,7 @@
                 <?php
                     $runtime_recent_record_data = $recent_record['runtime'];    
                     $runtime_recent_record_microtime = substr($runtime_recent_record_data, strpos($runtime_recent_record_data, ".") + 1);    
-                    $runtime_recent_record_timeFormat = gmdate("H:i:s", $runtime_recent_record_data).'<span class="text-muted">.'.$runtime_recent_record_microtime.'</span>';
+                    $runtime_recent_record_timeFormat = gmdate("H:i:s", (int) $runtime_recent_record_data).'<span class="text-muted">.'.$runtime_recent_record_microtime.'</span>';
                     $dateFormat_recent_record = date('Y/m/d  (H:i)', strtotime($recent_record['date']));
                 ?>
                 [

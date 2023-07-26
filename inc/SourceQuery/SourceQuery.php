@@ -403,7 +403,7 @@
 				$Player[ 'Name' ]  = $Buffer->GetString( );
 				$Player[ 'Frags' ] = $Buffer->GetLong( );
 				$Player[ 'Time' ]  = (int)$Buffer->GetFloat( );
-				$Player[ 'TimeF' ] = gmdate( ( $Player[ 'Time' ] > 3600 ? 'H:i:s' : 'i:s' ), $Player[ 'Time' ] );
+				$Player[ 'TimeF' ] = gmdate( ( $Player[ 'Time' ] > 3600 ? 'H:i:s' : 'i:s' ), (int) $Player[ 'Time' ] );
 				
 				$Players[ ] = $Player;
 			}
