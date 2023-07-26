@@ -4,13 +4,13 @@
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
 
 /*  Database Config */
-// require_once('secret.php');
+require_once('secret.php');
 
-    $db_host = getenv("PS_HOST");            // DB Hostame
+    $db_host = $PS_HOST;            // DB Hostame
     $db_port = '3306';                          // DB Port (Default: 3306)
-    $db_username = getenv("PS_USERNAME");    // DB Username
-    $db_password = getenv("PS_PASSWORD");    // DB Password
-    $db_database = getenv("PS_DATABASE");        // DB Database
+    $db_username = $PS_USERNAME;    // DB Username
+    $db_password = $PS_PASSWORD;    // DB Password
+    $db_database = $PS_DATABASE;        // DB Database
 
 /* End of  Database Config */
 

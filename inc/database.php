@@ -3,9 +3,8 @@
 // Create connection
 // $db_conn_surftimer = new mysqli($db_host.':'.$db_port, $db_username, $db_password, $db_database);
 
-$cert_file = getenv("SSL_CERT_FILE");
 $db_conn_surftimer = mysqli_init();
-$db_conn_surftimer->ssl_set(NULL, NULL, $cert_file, NULL, NULL);
+$db_conn_surftimer->ssl_set(NULL, NULL, $SSL_CERT_FILE, NULL, NULL);
 $db_conn_surftimer->real_connect($db_host, $db_username, $db_password, $db_database);
 
 // Check connection
