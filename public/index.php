@@ -18,7 +18,7 @@
                     <div class="blur container title-container">
                         <div class="title-space"></div>
                         <div class="image-title">
-                            <img src="./images/logo.png" height="100">
+                            <img src="<?php __DIR__."/../images/logo.png" ?>" height="100">
                             <p>CS:GO Surf Servers</p>
                         </div>
                         <div class="row button-row">
