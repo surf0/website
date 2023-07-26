@@ -3,10 +3,7 @@
     
     require_once('./inc/includes.php');
 
-    if (isset($_GET['map']))
-        $mapname = $_GET['map'];
-    else
-        $mapname = '';
+    $mapname = $_GET['map'] ?? '';
 
     //require_once('./inc/pages/dashboard_maps.php');
     require_once('./header.php');
