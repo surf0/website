@@ -42,10 +42,10 @@ if(($mapname!=='')):
                 $map_stages = $row_map_stages['stages'] + 1;
                 $map_bonuses = $row_map_bonuses['zonegroup'] ?? Null;
 
-                if(($row_map['stages']!==$map_stages)||($row_map['bonuses']!==$map_bonuses)):
-                    $sql_map_stages_bonuses_update = "UPDATE `ck_maptier` SET `stages` = '$map_stages', `bonuses` = '$map_bonuses' WHERE `ck_maptier`.`mapname` = '$map_name';";
-                    $query_map_stages_bonuses_update = mysqli_query($db_conn_surftimer, $sql_map_stages_bonuses_update);
-                endif;
+                // if(($row_map['stages']!==$map_stages)||($row_map['bonuses']!==$map_bonuses)):
+                //     $sql_map_stages_bonuses_update = "UPDATE `ck_maptier` SET `stages` = '$map_stages', `bonuses` = '$map_bonuses' WHERE `ck_maptier`.`mapname` = '$map_name';";
+                //     $query_map_stages_bonuses_update = mysqli_query($db_conn_surftimer, $sql_map_stages_bonuses_update);
+                // endif;
 
                 $map_stages_info = $map_stages;
                 if($map_stages_info == '1')
@@ -147,7 +147,7 @@ if(($mapname!=='')):
 
                         if(isset($row_stage_top_time['runtimepro'])):
                             $stage_top_time_runtime_microtime = substr($row_stage_top_time['runtimepro'], strpos($row_stage_top_time['runtimepro'], ".") + 1);    
-                            $stage_top_time_runtime_timeformat = gmdate(format: "i:s", timestamp: $row_stage_top_time['runtimepro']) . "<span class=\"text-muted\">." . $stage_top_time_runtime_microtime . "</span>";
+                            $stage_top_time_runtime_timeformat = gmdate(format: "i:s", timestamp: (int) $row_stage_top_time['runtimepro']) . "<span class=\"text-muted\">." . $stage_top_time_runtime_microtime . "</span>";
                         else:
                             $stage_top_time_runtime_timeformat = '<small class="text-muted">N/A</small>';
                         endif;
@@ -202,7 +202,7 @@ if(($mapname!=='')):
 
                                 $map_bonuses_completions_runtime = $row_map_bonuses_completions['runtime'];
                                 $map_bonuses_completions_runtime_microtime = substr($map_bonuses_completions_runtime, strpos($map_bonuses_completions_runtime, ".") + 1);    
-                                $map_bonuses_completions_runtime_timeformat = gmdate("i:s", $row_map_bonuses_completions['runtime']).'<span class="text-muted">.'.$map_bonuses_completions_runtime_microtime.'</span>';
+                                $map_bonuses_completions_runtime_timeformat = gmdate("i:s", (int) $row_map_bonuses_completions['runtime']).'<span class="text-muted">.'.$map_bonuses_completions_runtime_microtime.'</span>';
 
                                 $map_bonuses_completions_date = $row_map_bonuses_completions['date'];
                                 if($map_bonuses_completions_date>'2021-03-03 10:51:48') 
@@ -359,7 +359,7 @@ endif;
 
 								$map_completion_runtime = $map_completion['runtimepro'];
 								$map_completion_runtime_microtime = substr($map_completion_runtime, strpos($map_completion_runtime, ".") + 1);    
-								$map_completion_runtime_timeformat = gmdate("i:s", $map_completion['runtimepro']).'<span class="text-muted">.'.$map_completion_runtime_microtime.'</span>';
+								$map_completion_runtime_timeformat = gmdate("i:s", (int) $map_completion['runtimepro']).'<span class="text-muted">.'.$map_completion_runtime_microtime.'</span>';
                                 
                                 $map_completion_date = $map_completion['date'];
                                 if($map_completion_date>'2021-03-03 10:49:50') 
