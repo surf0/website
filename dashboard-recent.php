@@ -2,10 +2,10 @@
     $page_name = 'Recent Records - Dashboard';
     $lgsl_show_servers = 0;
     
-    require_once(__DIR__.'/../inc/includes.php');
+    require_once('./inc/includes.php');
 
-    require_once(__DIR__.'/header.php');
-    require_once(__DIR__.'/navbar.php');
+    require_once('./header.php');
+    require_once('./navbar.php');
 ?>
     
     <div class="">
