@@ -1,7 +1,7 @@
 <?php
     $page_name = 'Maps - Dashboard';
     
-    require_once('./inc/includes.php');
+    require_once(__DIR__.'/../inc/includes.php');
 
     if (isset($_GET['map']))
         $mapname = $_GET['map'];
@@ -9,8 +9,8 @@
         $mapname = '';
 
     //require_once('./inc/pages/dashboard_maps.php');
-    require_once('header.php');
-    require_once('navbar.php');
+    require_once(__DIR__.'/header.php');
+    require_once(__DIR__.'/navbar.php');
 ?>
     
     <div class="">

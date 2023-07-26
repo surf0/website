@@ -35,7 +35,7 @@
         <script type="text/javascript" src="./vendor/js/datatables.min.js"></script>
         <script defer data-domain="surf0.net" src="https://stats.960.eu/js/plausible.js"></script>
 
-        <?php require_once('./inc/scripts.php'); ?>
+        <?php require_once(__DIR__.'/../inc/scripts.php'); ?>
 
     </head>
     <body class="d-flex flex-column bg-black-kp">
