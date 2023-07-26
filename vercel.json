@@ -28,6 +28,10 @@
             "dest": "/api/maps.php"
         },
         {
+            "src": "/dashboard-mostactive.php",
+            "dest": "/api/mostactive.php"
+        },
+        {
             "src": "/(.*)",
             "dest": "/api/index.php"
         }
