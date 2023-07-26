@@ -19,20 +19,20 @@
         <link rel="manifest" href="./images/site.webmanifest">
 
         <!-- Bootstrap core CSS -->
-        <link href="<?php __dir__."/../vendor/bootstrap/css/cyborg/bootstrap.min.css" ?>" rel="stylesheet">
+        <link href="<?php __DIR__."/../vendor/bootstrap/css/cyborg/bootstrap.min.css" ?>" rel="stylesheet">
 
         <!-- Custom core CSS -->
-        <link href="<?php __dir__."/../vendor/fontawesome-free-6.1.2-web/css/all.min.css"?>" rel="stylesheet">
-        <link href="<?php __dir__."/../vendor/css/datatables.min.css"?>" rel="stylesheet">
-        <link href="<?php __dir__."/../vendor/css/custom.css"?>" rel="stylesheet">
+        <link href="<?php __DIR__."/../vendor/fontawesome-free-6.1.2-web/css/all.min.css"?>" rel="stylesheet">
+        <link href="<?php __DIR__."/../vendor/css/datatables.min.css"?>" rel="stylesheet">
+        <link href="<?php __DIR__."/../vendor/css/custom.css"?>" rel="stylesheet">
 
         <!-- JavaScript Core -->
-        <script src="<?php __dir__."/../vendor/js/popperjs-2.11.6.min.js"?>"></script>
-        <script src="<?php __dir__."/../vendor/js/jquery-3.6.0.min.js"?>"></script>
-        <script src="<?php __dir__."/../vendor/bootstrap/js/bootstrap.min.js"?>"></script>
+        <script src="<?php __DIR__."/../vendor/js/popperjs-2.11.6.min.js"?>"></script>
+        <script src="<?php __DIR__."/../vendor/js/jquery-3.6.0.min.js"?>"></script>
+        <script src="<?php __DIR__."/../vendor/bootstrap/js/bootstrap.min.js"?>"></script>
         
         <!-- Datatables Core -->
-        <script type="text/javascript" src="<?php __dir__."/../vendor/js/datatables.min.js"?>"></script>
+        <script type="text/javascript" src="<?php __DIR__."/../vendor/js/datatables.min.js"?>"></script>
         <script defer data-domain="surf0.net" src="https://stats.960.eu/js/plausible.js"></script>
 
         <?php require_once(__DIR__.'/../inc/scripts.php'); ?>
