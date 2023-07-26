@@ -220,6 +220,8 @@
 
     // steam profile picture
 
+    $STEAM_API_KEY = getenv("STEAM_API_KEY");
+
     $json = file_get_contents("http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key={$STEAM_API_KEY}&steamids={$usr_steamid64}");
     $steam_parsed = json_decode($json);
     $avatar = $steam_parsed->response->players[0]->avatarfull;

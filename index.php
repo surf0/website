@@ -111,11 +111,9 @@
                                     </thead>
 
                                     <tbody class="accordion" id="accordionServers">
-                                        <?php Server("Very Easy [Tier 1]","85568392925175846") ?>
-                                        <?php Server("Easy [Tier 1-2]","85568392925187498") ?>
-                                        <?php Server("Medium [Tier 2-3]","85568392925188366") ?>
-                                        <?php Server("Hard [Tier 3-8]","85568392925188368") ?>
-                                        <?php Server("All Maps [Tier 1-8]","85568392925188370") ?>
+                                       <tr>
+                                        <td class="text-center align-middle" colspan="100%" >No servers online</td>
+                                        </tr>
                                     </tbody>
                                     
                                     </table>
