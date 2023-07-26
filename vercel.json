@@ -32,6 +32,10 @@
             "dest": "/api/mostactive.php"
         },
         {
+            "src": "/dashboard-player.php",
+            "dest": "/api/player.php"
+        },
+        {
             "src": "/(.*)",
             "dest": "/api/index.php"
         }
