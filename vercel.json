@@ -1,11 +1,13 @@
 {
     "functions": {
         "api/*.php": {
-            "runtime": "vercel-php@0.6.0",
-            "includeFiles": [
-                "vendor/**",
-                "images/**"
-            ]
+            "runtime": "vercel-php@0.6.0"
+        },
+        "vendor/**": {
+            "runtime": "serve@14.2.0"
+        },
+        "images/**": {
+            "runtime": "serve@14.2.0"
         }
     },
     "routes": [
