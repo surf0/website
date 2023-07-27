@@ -101,7 +101,7 @@ if(($mapname!=='')):
                 $map_total_bonuses_completions_count = $row_map_total_bonuses_completions_count['count'];
                 $map_normal_bonuses_completions_count = $row_map_normal_bonuses_completions_count['count'];
 
-                if($sql_map_normal_completions_count != 0):
+                if($sql_map_normal_completions_count !== '0'):
 
                     if($exists_UsrTableCountryCodeAndContinentCodeCheck)
                         $sql_map_completions = "SELECT ck_playertimes.*, ck_playerrank.name as goodname, ck_playerrank.country, ck_playerrank.countryCode, ck_playerrank.continentCode, ck_playerrank.steamid64 FROM `ck_playertimes` LEFT JOIN `ck_playerrank` ON ck_playerrank.steamid=ck_playertimes.steamid AND ck_playerrank.style=ck_playertimes.steamid WHERE mapname='$map_name' AND ck_playertimes.style='0'";
